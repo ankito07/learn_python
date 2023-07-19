@@ -57,3 +57,47 @@ print(my_value)
 # Here we take user's name as input store it in name variable and then print it.
 name = input("Hey, What is your Name?\n")  # '\n' is to move to new-line
 print("Hey, " + name)  # string concatenation
+
+# Type Conversion
+a = str(100)
+b = int(a)
+c = type(b)
+print(type(int(str(100))))
+
+# Escape Sequence
+weather = "It's a sunny day"
+temperature = "It\'s\t\"kind of\" warm"
+print(weather + '\n' + temperature)
+
+# Formatted strings
+name = 'Tom'
+age = 55
+print(f'Hi, {name}. You are {age} year\'s old')
+print('Hi {}. You are {} \"years\" old'.format(name, age))  # Old deprecated way, used till python 2.0
+
+# String index
+name = "Hey my name is Tom"
+print(name[0])
+name = '012345678'
+# [start:stop:step-over]
+print(name[0:3])  # this is referred as range(string slicing)
+print(name[0:3:2])
+print(name[::2])
+print(name[::-1])  # negative is used to refer to the index of end of the string
+
+# Immutability : Strings in python are immutable
+
+# Python built-in function refer to python docs and some we have used above like abs(), round()
+greet = "hellooo"
+print(len(greet))
+print(greet[0:len(greet)])
+print(greet.split('o'))  # splits the string when it encounters letter 'o'
+print(greet.capitalize())  # capitalize first letter in the given string
+print(greet.find('oo'))  # finds the 'oo' in the string and prints it occurrence
+greet2 = greet.replace("lo", "it")
+print(greet2)
+
+# booleans : It's either 'True' or 'False'
+name = 'Tom'
+is_happy = True  # value is 1
+does_workout = False  # value is 0
