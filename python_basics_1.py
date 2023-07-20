@@ -101,3 +101,55 @@ print(greet2)
 name = 'Tom'
 is_happy = True  # value is 1
 does_workout = False  # value is 0
+
+# Exercise 1 : Password checker
+username = input("Hi, Please provide a username\n")
+password = input("Please enter your password\n")
+
+password_length = len(password)  # calculate length of password provided
+hidden_password = "*" * password_length  # creates a secret string of length similar to password_length
+
+print(f'Hi {username} your password {hidden_password} is {password_length} letters long, Thank you!')
+
+# Data Structures : specialized format for organizing, processing, retrieving and storing data.
+
+
+# Lists
+shopping_cart = ["mobile", "textbook", "sunglasses"]
+print(shopping_cart[2])
+
+# list_slicing : creates a new copy of the list being sliced
+print(shopping_cart[1:])
+print(shopping_cart[0::2])
+
+# lists are are mutable
+shopping_cart[1] = "laptop"
+print(shopping_cart[1])
+
+# Matrix : way to describe multidimensional list
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print(matrix)
+print(matrix[0][2])
+
+# Lists methods
+bag = [1, 5, 7, 8, 9, 5]
+bag.insert(0, 100)  # adds value at a given index
+print(bag)
+bag.append(10)  # adds value at the end of list
+print(bag)
+bag.extend([34, 76, 89, 5])  # extends the list with multiple value
+print(bag)
+bag.pop()  # default: pops value from end or from given index, returns the value
+bag.pop(0)
+print(bag)
+bag.remove(8)  # removes the given value, returns none
+print(bag)
+print(bag.index(9))  # returns the index at which we have number 7 in the list
+print(5 in bag)  # checks the value in the list and returns boolean value
+print(bag.count(5))
+bag.clear()  # clears the list
+print(bag)
