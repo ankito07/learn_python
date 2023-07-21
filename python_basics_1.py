@@ -135,7 +135,9 @@ matrix = [
 print(matrix)
 print(matrix[0][2])
 
-# Lists methods
+# List methods : we can categorize methods in two types :
+# returns value : creates new list
+# returns none : makes changes on the given list
 bag = [1, 5, 7, 8, 9, 5]
 bag.insert(0, 100)  # adds value at a given index
 print(bag)
@@ -151,5 +153,91 @@ print(bag)
 print(bag.index(9))  # returns the index at which we have number 7 in the list
 print(5 in bag)  # checks the value in the list and returns boolean value
 print(bag.count(5))
+bag.sort()  # sorts the given list in ascending order
+print(bag)
 bag.clear()  # clears the list
 print(bag)
+sentence = '  '
+new_sentence = sentence.join(['Hi', 'my', 'name', 'is', 'wick'])
+print(new_sentence)
+test_list = [
+    {
+        'potato': 35,
+        'onion': 23,
+        'eggplant': 45
+    },
+    {
+        'a': [1, 2, 'x'],
+        'b': 'hello',
+        'c': 23
+    }
+]
+print(test_list[1]['b'])
+
+# list unpacking
+x, y, z, *other, k = [1, 2, 3, 4, 5, 6]
+print(x, y, z, other, k)
+
+# Dictionary or dict : another data structure
+# Un-ordered key-value pair
+# keys are immutable
+vegetables = {
+    'potato': 35,
+    'onion': 23,
+    'eggplant': 45
+}
+print(vegetables['onion'])
+
+test_dict = {
+    'a': [1, 2, 'x'],
+    'b': 'hello',
+    'c': 23
+}
+print(test_dict['a'][2])
+
+# another way to define dictionary
+user = dict(name='kia', age=23, height=165, weight=55, origin='asian')
+print(user)
+
+# methods in dictionary
+print(user.get('height', 180))  # checks for the given key if it doesn't exist then assigns given value
+print('age' in user)  # default checks keys
+print('kia' in user.values())
+print('height' in user.keys())
+print(user.items())
+
+user2 = user.copy()
+print(user.clear())
+print(user2)
+print(user2.pop('height'))  # pops given key return's its value
+print(user2.popitem())  # pops last inserted key-value
+print(user2.update({'age': 25}))  # if key exist then it updates it
+print(user2.update(({'level': 2})))  # or appends the value
+print(user2)
+
+# Tuple : another data structure
+# immutable list
+my_tuple = (1, 2, 3, 5, 3)
+print(my_tuple)
+print(my_tuple.count(3))
+print(my_tuple.index(2))
+
+# Sets : another data structure
+# unordered collections of unique objects
+my_set = {1, 2, 4, 5, 3}
+print(my_set)
+my_set.add(5)  # ignores this as it will create a duplicate
+print(my_set)
+my_list = [1, 2, 2, 3, 3, 4]  # a use-case
+print(set(my_list))
+print(list(my_set))
+
+# methods in sets
+learn_set = {1, 2, 3, 4, 5, 11}
+learn_set2 = {4, 5, 6, 7}
+print(learn_set.difference(learn_set2))  # duplicates gets ignored
+my_set.discard(11)
+print(my_set)
+print(learn_set.intersection(learn_set2))  # prints the common value shorthand (use : &)
+print(learn_set.isdisjoint(learn_set2))  # True if nothing in common False if it's their
+print(learn_set.union(learn_set2))  # combines both the sets and creates a unique set from both shorthand (use : |)
