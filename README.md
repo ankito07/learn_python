@@ -3,3 +3,6 @@ Learn python along with developing interesting real life python project based on
 
 ## python_basics_1.py
 Contains python basics to get started with coding.
+
+## python_basics_2.py
+Contains python basics to perform actions and to give logical reasoning to your python code.
