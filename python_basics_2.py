@@ -1,5 +1,5 @@
 # Once you are done with python_basics_1 and learned all the basic elements of python coding now it's time to enhance
-# you skill with performing useful actions and giving logical reasoning on your python code.
+# your skill with performing useful actions and giving logical reasoning on your python code.
 
 
 # Conditional-logic
@@ -91,3 +91,82 @@ for _ in range(10, 0, -1):
 
 for _ in range(3):
     print(list(range(10)))
+
+# enumerate() : method adds a counter to an iterable and returns it in a form of enumerating object
+
+for i, char in enumerate("Hellooo"):
+    print(i, char)
+
+# While loops : with the while loop we can execute a set of statements as long as a condition is true. A while loop may
+# have an optional else block. Here, the else part is executed after the condition of the loop evaluates to False.
+
+i = 0
+while i < 50:
+    print(i)
+    i += 1
+print("Execution completed")
+
+# Useful use case which can be used to develop a chatbot type application.
+while True:
+    user_response = input("Hi, say something: ")
+    if user_response == 'bye':
+        break
+
+# break, continue, pass
+
+for i in [1, 2, 3, 4, 5]:
+    if i == 2:
+        continue  # skips the given condition
+    elif i == 4:
+        break  # stops the iteration as the condition become true
+    print(i)
+
+for i in [1, 2, 3]:
+    # will code later
+    pass
+
+
+# Functions : A function is a block of code which only runs when it is called. It is initiated with 'def' keyword
+# You can pass data, known as parameters, into a function.
+# A function can return data as a result.
+def my_function():
+    print("Hello")
+
+
+my_function()
+my_function()  # a function can be called and executed multiple times
+
+
+# Arguments and Parameters : A parameter is the variable listed inside the parentheses in the function definition.
+# An argument is the value that are sent to the function when it is called.
+
+def calculator(a=1, y=1):
+    result = a + y
+    return result
+
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+print(calculator(num1, num2))
+print(calculator())
+
+
+# Methods vs Functions : A function doesn't need any object and is independent, while the method is a function,
+# which is linked with any object. We can directly call the function with its name, while the method is called by the
+# object's name. Function is used to pass or return the data, while the method operates the data in a class.
+
+# input(), print(), max(), min() : These are functions
+# capitalize(), lower() : These are methods
+
+# Docstring
+
+def doc_string_func():
+    """
+    Info: This function is used to learn docstring in python
+    :parameter : You can write about what parameter this function is accepting here
+    :return : Write what is being returned
+    """
+    print("hello")
+
+
+doc_string_func()
