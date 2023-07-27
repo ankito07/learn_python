@@ -170,3 +170,42 @@ def doc_string_func():
 
 
 doc_string_func()
+
+
+# *args : argument, **kwargs : keyword arguments
+# Rule : params, *args, default params, **kwargs
+def sum_func(*args):
+    return sum(args)  # args here are tuple of argument
+
+
+print(sum_func(1, 2, 3, 4))
+
+
+def sum_func_again(**kwargs):
+    return sum(kwargs.values())  # kwargs here are dictionary of arguments
+
+
+print(sum_func_again(number1=25, number2=25))
+
+
+# Exercise to find highest even value in the given list
+def highest_even(li):
+    even = []
+    for items in li:
+        if items % 2 == 0:
+            even.append(items)
+    return max(even)
+
+
+print(f" The highest even value in the given list is: {highest_even([10, 2, 3, 4, 8, 11])}")
+
+# Walrus operator : ":="
+word = "preoperational"
+
+if (n := len(word)) > 5:
+    print(f"given word is too long has {n} elements")
+
+# Exercise to reduce a variable by one from last index in each iteration
+while (n := len(word)) > 1:
+    print(n)
+    word = word[:-1]
