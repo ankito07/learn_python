@@ -1,5 +1,7 @@
-# How does Python works? Python code that we write goes to python interpreter gets converted from human-readable to
-# machine codes i.e. 0's and 1's and then gets executed using a compiler.
+"""
+How does Python works? Python code that we write goes to python interpreter gets converted from human-readable to
+machine codes i.e. 0's and 1's and then gets executed using a compiler
+"""
 
 # Fundamental Data Types in Python
 

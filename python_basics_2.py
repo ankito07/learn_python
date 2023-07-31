@@ -1,5 +1,7 @@
-# Once you are done with python_basics_1 and learned all the basic elements of python coding now it's time to enhance
-# your skill with performing useful actions and giving logical reasoning on your python code.
+"""
+Once you are done with python_basics_1 and learned all the basic elements of python coding now it's time to enhance
+your skill with performing useful actions and giving logical reasoning on your python code.
+"""
 
 
 # Conditional-logic
@@ -209,3 +211,16 @@ if (n := len(word)) > 5:
 while (n := len(word)) > 1:
     print(n)
     word = word[:-1]
+
+# Global variable and local variable
+
+global_var = 5
+
+
+def local_variable():
+    local_var = 7
+    return local_var
+
+
+print(global_var)
+print(local_variable())
