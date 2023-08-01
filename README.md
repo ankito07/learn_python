@@ -9,3 +9,9 @@ Contains python basics to perform actions and to give logical reasoning to your 
 
 ## advance_python_oop.py
 In this python tutorial we will learn about the 'OOP' paradigm. Let me foretell you this will take lot of reading. ;-)
+
+## advance_python_programming_functional_programming.py
+In this tutorial we will learn about functional programming paradigm
+
+## advance_python_programming.py
+In this we will learn about decorators, Error handling, Generators, File I/O and Regular expressions in python.
