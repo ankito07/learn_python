@@ -16,3 +16,9 @@ In this tutorial we will learn about functional programming paradigm
 
 ## advance_python_programming.py
 In this we will learn about decorators, Error handling, Generators, File I/O and Regular expressions in python.
+
+# python_projects
+
+## hackproof_password_checker.py
+This is not just a simple password checker in this project we will build a password_checker that tells you that
+the password you have created has ever been hacked or not along with its count
